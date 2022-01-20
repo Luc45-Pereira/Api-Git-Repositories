@@ -1,5 +1,14 @@
+body{
+  margin: 0;
+  height: 100%;
+  background-color: #D6DDF5;
+
+}
+
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 .App-logo {
@@ -14,14 +23,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -36,3 +45,337 @@
     transform: rotate(360deg);
   }
 }
+
+#rodape{
+  background: transparent;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  margin: auto;
+  border-top: black 2px dotted;
+}
+
+#rodape a{
+  padding: 20px;
+  
+}
+
+#rodape a img{
+ 
+  width: 70px;
+}
+
+#top{
+  background-color: #4C4569;
+  height: 160px;
+}
+
+#cabecalho{
+  width: 350px;
+  height: 50px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#cabecalho img{
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+#cabecalho h1{
+  margin-left: 20px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#repo{
+  margin-top: 50px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+
+}
+
+.ReposLists{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 350px;
+  height: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  padding:20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  flex-direction: column;
+  background: #797f9460;
+ 
+}
+
+.ReposLists span{
+  display: flex;
+  font-size: 0.9em;
+  padding-right: 220px;
+
+}
+
+.ReposLists h1{
+  width: 150px;
+  height: 20px;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+.ReposLists h6{
+  margin-top: 30%;
+  font-size: 0.9em;
+  margin-left: -40%;
+
+}
+
+
+#Options {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#Options select{
+  margin-right: 30px;
+  border-radius: 10px;
+  background-color: white;
+  border-color: transparent;
+}
+
+#Options #change{
+  border-radius: 10px;
+  border: rgb(165, 162, 162) 1px solid;
+  padding: 3px;
+}
+
+#Options button{
+  margin-right: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #2f2f2f;
+  background-color: white;
+  border: 1px solid #2f2f2f;
+  border-radius: 0px 48px 48px 0px;
+  padding: 10px 15px;
+  transition: 0.4s;
+}
+
+#Options button:hover{
+  color: #ffffff;
+  background-color:#6acf77;
+}
+
+#Options input{
+  caret-color: yellowgreen;
+  padding: 0px 0px 0px 10px;
+  margin-left: 20px;
+  border: 1px solid #2f2f2f;
+  border-radius: 48px 0px 0px 48px;
+}
+
+
+
+@media only screen and (max-width: 375px){
+  
+  #top{
+    width: auto;
+    background-color: #4C4569;
+    height: 160px;
+  }
+  
+  #cabecalho{
+    width: 350px;
+    height: 50px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ReposLists {
+    height: 90px;
+    width: 400px;
+    padding: 8px;
+    margin: 20px 0px 20px 0px;
+  }
+  
+  .ReposLists span{
+    display: flex;
+    font-size: 0.7em;
+    padding-right: 1px;
+  }
+  
+  .ReposLists h1{
+    width: 150px;
+    height: 20px;
+    font-size: 0.9em;
+    text-decoration: underline;
+  }
+  
+
+  
+  
+  #Options {
+    margin-top: 20px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #Options select{
+    margin-right: 5px;
+    margin-top: 10px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: transparent;
+  }
+  
+  
+  #Options button{
+    margin-right: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #2f2f2f;
+    background-color: white;
+    border: 1px solid #2f2f2f;
+    border-radius: 0px 48px 48px 0px;
+    padding: 10px 15px;
+    transition: 0.4s;
+    flex-wrap: nowrap;
+  }
+  
+  #Options button:hover{
+    color: #ffffff;
+    background-color:#6acf77;
+  }
+  
+  #Options input{
+    caret-color: yellowgreen;
+    padding: 0px 0px 0px 10px;
+    width: 100px;
+    border: 1px solid #2f2f2f;
+    border-radius: 48px 0px 0px 48px;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 380px){
+  #top{
+    width: 100%;
+    background-color: #4C4569;
+    height: 160px;
+  }
+
+
+  
+  #cabecalho{
+    width: 350px;
+    height: 50px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .ReposLists {
+    height: 120px;
+  }
+  
+  .ReposLists span{
+    display: flex;
+    font-size: 0.7em;
+    padding-right: 5px;
+  }
+  
+  #Options {
+    
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  #Options select{
+    margin-right: 5px;
+    margin-top: 10px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: white;
+    border-color: transparent;
+  }
+  
+  #Options button{
+    margin-right: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #2f2f2f;
+    background-color: white;
+    border: 1px solid #2f2f2f;
+    border-radius: 0px 48px 48px 0px;
+    padding: 10px 15px;
+    transition: 0.4s;
+    flex-wrap: nowrap;
+  }
+  
+  #Options button:hover{
+    color: #ffffff;
+    background-color:#6acf77;
+  }
+  
+  #Options input{
+    caret-color: yellowgreen;
+    padding: 0px 0px 0px 10px;
+    width: 150px;
+    border: 1px solid #2f2f2f;
+    border-radius: 48px 0px 0px 48px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 1000px){
+  #top{
+    background-color: #4C4569;
+    height: 160px;
+  }
+  
+  
+  
+  .ReposLists{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 240px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+    background: #797f9460;
+   
+  }
+  
+  .ReposLists span{
+    display: flex;
+    font-size: 0.7em;
+    padding-right: 120px;
+  }
+}
+
